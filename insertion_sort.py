@@ -13,7 +13,5 @@ def insertion_sort(array_to_sort):
         print("inserted:", array_to_sort)
     return array_to_sort
 
-
-
 if __name__ == "__main__":
     print(insertion_sort([7,9,3,6,2,5,1,4,2]))
