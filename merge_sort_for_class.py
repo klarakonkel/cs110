@@ -54,7 +54,8 @@ def merge_sort(A, p, r):
 
     return A
 
-if __name__ == "__main__":
-    print("test case 1: ", merge_sort[1, 4, 5, 9, 2, 8, 3, 6]))
-    print("test case 2 (duplicate): ", merge_sort([1, 4, 5, 9, 2, 8, 3, 6, 5]))
-    print("test case 3 (empty): ", merge_sort([]))
+print("test case 1: ", merge_sort([1, 2, 3, 4, 5, 6, 7, 8], 0, 7))
+print("test case 2 (duplicates): ", merge_sort([1, 3, 5, 7, 2, 4, 6, 8, 2, 6], 0, 9)) 
+print("test case 2 (duplicates, shortened): ", merge_sort([1, 3, 5, 7, 2, 4, 6, 8, 2, 6], 0, 7))
+print("test case 3: ", merge_sort([1, 1, 1, 1, 3, 5, 7, 2, 4, 6, 8], 3, 10)) #should print sorted with an additional 1s in front
+print("test case 4 (empty): ", merge_sort([], 0, 0))
